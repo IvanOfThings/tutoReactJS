@@ -7,6 +7,11 @@ body {
     padding-left: 30px;
   }
   
+  li {
+    margin:  1px;
+    padding: 3px;
+  }
+
   .bold{
     font-weight: bold;
   }

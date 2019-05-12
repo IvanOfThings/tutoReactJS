@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Button from '@material-ui/core/Button';
 
 class Board extends React.Component {
 
@@ -36,7 +37,7 @@ function Square(props) {
     return (
         <button className={props.remarked ? "square remarcado" : "square"} onClick={props.onClick} >
             {props.value}
-        </button >
+        </button>
     );
 }
 
@@ -68,7 +69,7 @@ class Game extends React.Component {
                 'Go to game start';
             return (
                 <li key={move}>
-                    <button className={this.state.stepNumber === move ? "bold" : "regular"} onClick={() => this.jumpTo(move)}>{desc}</button>
+                    <Button variant="contained" color={this.state.stepNumber === move ? "primary" : ""} onClick={() => this.jumpTo(move)}>{desc}</Button>
                 </li>
             )
         });
