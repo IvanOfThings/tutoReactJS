@@ -7,6 +7,14 @@ body {
     padding-left: 30px;
   }
   
+  .bold{
+    font-weight: bold;
+  }
+
+  .regular{
+    font-weight: normal;
+  }
+
   .board-row:after {
     clear: both;
     content: "";
