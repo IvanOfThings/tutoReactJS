@@ -43,6 +43,10 @@ body {
   .square:focus {
     outline: none;
   }
+
+  .square.remarcado {
+    background: red;
+  }
   
   .kbd-navigation .square:focus {
     background: #ddd;
